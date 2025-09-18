@@ -1,0 +1,60 @@
+a{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+a:visited{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    background-color: greenyellow;
+    color: black;
+}
+a:active{
+    color: yellow;
+}
+ul{
+    list-style: square  inside;
+    color: aqua;
+    background-color: black;
+    font-size: 2rem;
+}
+ol{
+    background-color: aqua;  font-size: 2rem;
+ text-align:left;
+ list-style-position: inside;
+
+
+}
+ul li:nth-child(2
+){
+    color: red;
+}
+ul li:nth-last-child(2)::marker{
+    color: aquamarine;
+    font-size: 0.5em;
+    content: "vanakam ";
+}
+
+body{
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+.col {
+    columns: 4;
+    column-rule: 2px solid black;
+
+}
+h3{
+    /* display: inline-block; */
+    font-size: 2rem;
+    white-space: nowrap;
+    break-inside: avoid;
+    background-color: green;
+    text-align: center;
+    column-span: all;
+}

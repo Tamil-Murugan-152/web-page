@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+</head>
+<body>
+  <fieldset style="width: 300px; margin: auto;">
+    <legend style="text-align: center;">Sign Up</legend>
+    <form>
+      <label for="input1">Input 1</label>
+      <input type="text" id="input1" required pattern="[0-9]{2}" title="Enter 2 digit positive values"><br><br>
+
+      <label for="input2">Input 2</label>
+      <input type="text" id="input2" required pattern="[0-9]{2}" title="Enter 2 digit positive values"><br><br>
+
+      <h6>
+        RESULT: <span id="result" style="border: 2px solid black; padding: 3px 10px;" >0</span>
+      </h6><br>
+
+      <button id="add">ADD</button>
+      <button id="mul">MUL</button>
+      <button id="res">RESET</button>
+    </form>
+  </fieldset>
+
+  <script src="sample.js"></script>
+</body>
+</html>
