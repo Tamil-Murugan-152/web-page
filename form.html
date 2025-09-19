@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="icon" href="/images/thumb-1920-321141.jpg">
+  
+    <style>
+        fieldset{
+            
+            border: 2px solid black;
+                   /* take full form width */
+           /* box-sizing: border-box; */
+           width: fit-content;
+        }
+        legend{
+            text-align: center;
+        }
+    form{
+        width: 100%;          /* responsive width */
+  max-width: 500px;    /* limit size */
+    }
+        label{
+            padding: 10px;
+            width: 50%;
+            
+        }
+        input{
+            background-color: black;
+            color: white;
+        }
+
+        body{
+            color:black;
+            background-color: greenyellow;
+            font-size: 20px;
+              display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  min-height: 80vh;        /* full screen height */
+  background: #aaff33;      /* your green background */
+  margin: 0;
+           
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>SIGN UP</legend>
+        <form action="/success.html" target="_blank">
+            <label for="fn">Firstname:&nbsp; &nbsp; </label>
+            <input type="text" id="fn" pattern="[A-Za-Z]" required><br>
+              <label for="ln">Lastname: &nbsp;&nbsp; </label>
+            <input type="text" id="ln"  pattern="[A-Za-Z]"><br>
+            <label for="birth">Birthday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="date"><br>
+             <label for="us">Username: &nbsp; </label>
+            <input type="text" id="us" pattern="[A-Za-Z]" required><br>
+                <label for="e">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </label>
+            <input type="email" id="e" pattern="[A-Za-Z0-9]" ><br>
+       <label for="web">Website:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </label>
+            <input type="text" id="web" pattern="[A-Za-Z0-9]" title="enter valid webpage"><br>
+                   <label for="pa">Password:&nbsp; &nbsp; </label>
+            <input type="password" id="pa" pattern="[A-Za-Z0-9]{8}" required><br>
+            <label for="pa">Password:&nbsp; &nbsp; </label>
+            <input type="password" id="pas" pattern="[A-Za-Z0-9]{8}" required title="re enter same password"><br> 
+
+            <input type="checkbox" required> <label for="">&nbsp;&nbsp;&nbsp;I agree to the terms & conditions</label>
+            <br>
+            <button type="submit" id="sub" style="background-color: black;color: yellow;">Sign up</button>
+
+        </form>
+    </fieldset>
+      <script src="/sample.js"></script>
+</body>
+</html>
